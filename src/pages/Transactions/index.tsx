@@ -8,8 +8,10 @@ export function Transactions() {
         <div>
             <Header />
             <Summary />
-            <SearchForm />
+
             <TransactionsContainer>
+                <SearchForm />
+                
                 <TransactionsTable>
                     <tbody>
                         <tr>
@@ -34,7 +36,7 @@ export function Transactions() {
                         </tr>
                         <tr>
                             <td width="50%">Conta de Luz</td>
-                            <td>- 
+                            <td>
                                 <PriceHighlight variant="outcome">
                                     - R$ 12.000,00
                                 </PriceHighlight>
