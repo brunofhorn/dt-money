@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:server":"json-server server.json -p 333 -w -d 500",
+    "dev:server": "npx json-server -p 3333 -w server.json",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint src --ext .tsx,.ts",
+    "lint:fix": "eslint src --ext .tsx,.ts --fix",
     "preview": "vite preview"
   },
   "dependencies": {
